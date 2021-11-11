@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/eCommerce
+    username: root
+    password: pass
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show-sql: true
+        
+#oAuth2 Config        
+        
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 1002371488163-og8bi5827ogli6j4dftg50n36qoef22k.apps.googleusercontent.com
+            client-secret: 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     
+   
+  
